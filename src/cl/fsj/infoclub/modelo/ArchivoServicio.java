@@ -25,9 +25,9 @@ public class ArchivoServicio {
 					listaProductos.add(productoNuevo);
 					productoNuevo = null;
 					data = br.readLine();
-					System.out.println("Se ha agregado el producto "+variables[3]);
+					System.out.println("\nSe ha agregado el producto "+variables[3]);
 				}
-				System.out.println("Productos agregados exitosamente.");
+				System.out.println("\nProductos agregados exitosamente.");
 
 				br.close(); 
 			} else {
