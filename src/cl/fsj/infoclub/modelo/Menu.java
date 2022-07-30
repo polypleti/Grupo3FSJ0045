@@ -39,9 +39,9 @@ public class Menu {
 			ps.listarProductos();
 
 		} else if (op == 2) {
-
-			//Editar datos
-
+			System.out.println("Ingrese el codigo del producto a editar: ");
+			String codigo = bufferedReader.readLine();
+			ps.editarProducto(codigo);
 		} else if (op == 3) {
 			ArchivoServicio archServ = new ArchivoServicio();
 			archServ.cargarDatos(ps.getListaProductos());
