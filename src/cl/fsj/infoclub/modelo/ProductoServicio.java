@@ -2,8 +2,6 @@ package cl.fsj.infoclub.modelo;
 
 import java.util.ArrayList;
 
-import cl.fsj.infoclub.Producto;
-
 public class ProductoServicio {
 	
 	private ArrayList <Producto> listaProductos = new ArrayList <>();
