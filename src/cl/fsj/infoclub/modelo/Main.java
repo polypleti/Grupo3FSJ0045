@@ -1,8 +1,10 @@
 package cl.fsj.infoclub.modelo;
 
+import java.io.IOException;
+
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws NumberFormatException, IOException, InterruptedException {
 
 		ProductoServicio productoServicio = new ProductoServicio();
 		Menu menu = new Menu();
