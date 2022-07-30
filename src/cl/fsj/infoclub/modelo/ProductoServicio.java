@@ -23,4 +23,16 @@ public class ProductoServicio {
 		this.listaProductos = listaProductos;
 	}
 	
+	public void listarProductos () {
+		
+		for(Producto productito:listaProductos) {
+			
+		
+			System.out.println("Datos de producto");
+			System.out.println("------------------------------------------");
+			System.out.println(productito.toString());
+			System.out.println("------------------------------------------");
+		}
+	}
+	
 }
