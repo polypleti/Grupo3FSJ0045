@@ -1,14 +1,13 @@
 package cl.fsj.infoclub.modelo;
 
 public class Producto {
-	String articulo, precio, descripcion, codigo, talla, marca, color;
+	private String articulo, precio, descripcion, codigo, talla, marca, color;
 	
 	public Producto() {
 		super();
 	}
 
-	public Producto(String articulo, String precio, String descripcion, String codigo, String talla, String marca,
-			String color) {
+	public Producto(String articulo, String precio, String descripcion, String codigo, String talla, String marca, String color) {
 		super();
 		this.articulo = articulo;
 		this.precio = precio;
@@ -75,4 +74,9 @@ public class Producto {
 		this.color = color;
 	}
 	
+	
+	public String toString() {
+		return "\nNombre de Producto: " + articulo + "\nPrecio: " + precio + "\nDescripcion: " + descripcion + "\nCodigo: "
+				+ codigo + "\nTalla: " + talla + "\nMarca: " + marca + "\nColor: " + color +"\n";
+	}
 }

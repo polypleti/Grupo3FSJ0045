@@ -43,9 +43,8 @@ public class Menu {
 			//Editar datos
 
 		} else if (op == 3) {
-			
-			//importar datos
-
+			ArchivoServicio archServ = new ArchivoServicio();
+			archServ.cargarDatos(ps.getListaProductos());
 		} else if (op == 4) {
 			Utilidad ut = new Utilidad();
 			ut.espera();
