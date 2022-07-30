@@ -74,9 +74,25 @@ public class Producto {
 		this.color = color;
 	}
 	
+	public void editarProducto(String nombre,String precio,String descripcion,String codigo,String talla,String marca, String color) {
+		setArticulo(nombre);
+		setPrecio(precio);
+		setDescripcion(descripcion);
+		setCodigo(codigo);
+		setTalla(talla);
+		setMarca(marca);
+		setColor(color);
+	}
+	
 	
 	public String toString() {
 		return "\nNombre de Producto: " + articulo + "\nPrecio: " + precio + "\nDescripcion: " + descripcion + "\nCodigo: "
 				+ codigo + "\nTalla: " + talla + "\nMarca: " + marca + "\nColor: " + color +"\n";
+	}
+	
+	public String toStringEnumerado() {
+
+		return "\n1) Nombre de Producto: " + articulo + "\n2) Precio: " + precio + "\n3) Descripcion: " + descripcion + "\n4) Codigo: "
+				+ codigo + "\n5) Talla: " + talla + "\n6) Marca: " + marca + "\n7) Color: " + color +"\n";
 	}
 }
