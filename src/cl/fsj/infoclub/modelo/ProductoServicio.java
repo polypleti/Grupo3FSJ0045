@@ -38,7 +38,7 @@ public class ProductoServicio {
 		}
 	}
 	
-	public void editarProducto(String codigo) throws IOException {
+	public boolean editarProducto(String codigo) throws IOException {
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
 		for(Producto producto: listaProductos) {
@@ -77,10 +77,12 @@ public class ProductoServicio {
 						producto.setColor(bufferedReader.readLine());
 						break;
 				}
-				System.out.println("La nueva version del producto es: "+ producto.toString());
+				System.out.println("La nueva version del producto es:\n"+ producto.toString());
+				return true;
 			}
-			else System.out.println("No se ha encontrado el producto.\n");
 		}
+		System.out.println("No se ha encontrado el producto.\n");
+		return false;
 	}
 	
 }
